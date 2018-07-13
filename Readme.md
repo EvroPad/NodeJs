@@ -11,12 +11,9 @@ GET ```http://localhost:1428/api/user```
 
 ### Создать нового юзера
 POST ```http://localhost:1428/api/user```
-
 BODY x-www-form-urlencoded
-
-name: String
-
-email: String
+name: String . 
+email: String . 
 
 
 ### Обновить юзера
