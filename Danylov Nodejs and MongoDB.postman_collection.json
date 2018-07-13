@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "0293ffd9-e8fd-401c-853c-b197ab5f6278",
+		"name": "Danylov Nodejs and MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "message",
+			"description": null,
+			"item": [
+				{
+					"name": "Get all messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:1428/api/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "senderId",
+									"value": "5b48a11ffb6fc062bcfbda79",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "receiverId",
+									"value": "5b48b54565e10c1c0fec48df",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "How was your day?",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1428/api/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete message",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:1428/api/message/5b48b9985a13151d82473e44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"message",
+								"5b48b9985a13151d82473e44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update message",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "5b48b9ce5a13151d82473e45",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "senderId",
+									"value": "5b48a11ffb6fc062bcfbda79",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "receiverId",
+									"value": "5b48b54565e10c1c0fec48df",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Are you here man?",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1428/api/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users with communication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:1428/api/message/5b48a11ffb6fc062bcfbda79",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"message",
+								"5b48a11ffb6fc062bcfbda79"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:1428/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "\n",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Igor",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "igor@fake.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1428/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:1428/api/user/5b48aaeeb603c31897033232",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"user",
+								"5b48aaeeb603c31897033232"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "5b48b54565e10c1c0fec48df",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Shaverma",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shaverma@fake.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1428/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1428",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
