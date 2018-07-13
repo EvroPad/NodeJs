@@ -13,16 +13,23 @@ GET ```http://localhost:1428/api/user```
 POST ```http://localhost:1428/api/user```
 
 BODY x-www-form-urlencoded
+
 name: String
+
 email: String
+
 
 ### Обновить юзера
 PUT ```http://localhost:1428/api/user```
 
 BODY x-www-form-urlencoded
+
 id: id
+
 name: String
+
 email: String
+
 
 ### Удалить юзера
 DEL ```http://localhost:1428/api/user/<id>```
@@ -37,18 +44,27 @@ GET ```http://localhost:1428/api/message```
 POST ```http://localhost:1428/api/message```
 
 BODY x-www-form-urlencoded
+
 senderId: id
+
 receiverId: id
+
 message: String
+
 
 ### Обновить сообщение
 PUT ```http://localhost:1428/api/message```
 
 BODY x-www-form-urlencoded
+
 id: id
+
 senderId: id
+
 receiverId: id
+
 message: String
+
 
 ### Удалить сообщение
 DEL ```http://localhost:1428/api/message/<id>```
